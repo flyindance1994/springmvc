@@ -18,24 +18,7 @@
 <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
       integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <body>
-
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-            aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="#">MrShip</a>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="/second">Second</a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
-            <a class="nav-item nav-link disabled" href="#">Disabled</a>
-        </div>
-    </div>
-</nav>
-
+<jsp:include page="navbar.jsp" flush="true" />
 <div class="container">
     <div class="col-sm-12">
         <%--<img src="/static/images/14.jpg">--%>
@@ -46,12 +29,12 @@
                     <input class="form-control" type="text" value="" id="name" name="name">
                 </div>
             </div>
-            <div class="form-group row">
-                <label for="age" class="col-2 col-form-label">年龄</label>
-                <div class="col-10">
-                    <input class="form-control" type="text" value="" id="age" name="age">
-                </div>
-            </div>
+            <%--<div class="form-group row">--%>
+                <%--<label for="age" class="col-2 col-form-label">年龄</label>--%>
+                <%--<div class="col-10">--%>
+                    <%--<input class="form-control" type="text" value="" id="age" name="age">--%>
+                <%--</div>--%>
+            <%--</div>--%>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
