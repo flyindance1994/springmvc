@@ -21,7 +21,7 @@
 <jsp:include page="navbar.jsp" flush="true" />
 <div class="container">
     <div class="row">
-        <form action="/index/add" method="post">
+        <form class="col-12" action="/index/add" method="post">
             <div class="form-group row">
                 <label for="name" class="col-2 col-form-label">姓名</label>
                 <div class="col-10">
@@ -41,7 +41,7 @@
             <div class="form-group row">
                 <label for="age" class="col-2 col-form-label">年龄</label>
                 <div class="col-10">
-                    <input class="form-control" type="number" value="" id="age" name="age">
+                    <input class="form-control" type="number" min="1" max="100" value="" id="age" name="age">
                 </div>
             </div>
             <div class="form-group row">
@@ -53,7 +53,7 @@
             <div class="form-group row">
                 <label for="phone" class="col-2 col-form-label">phone</label>
                 <div class="col-10">
-                    <input class="form-control" type="tel" value="" id="phone" name="phone">
+                    <input class="form-control" type="tel" id="phone" name="phone">
                 </div>
             </div>
             <button class="btn btn-submit" type="submit">Submit</button>
